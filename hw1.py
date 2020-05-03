@@ -2,9 +2,10 @@
 
 import sys
 
-argLen = len(sys.argv)
+iterFile = iter(sys.argv)
+next(iterFile)
 
-for i in range(1,argLen):
-	with open(sys.argv[i],'r') as file:
+for x in iterFile:
+	with open(x,'r') as file:
 		print(file.read())
 		

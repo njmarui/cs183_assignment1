@@ -1,3 +1,7 @@
 #!/bin/bash
 
-cat $@
+
+if [ $# != 0 ]
+then 
+	cat $@;
+fi
